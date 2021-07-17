@@ -1,0 +1,47 @@
+{
+  "products" : [
+
+  ],
+  "settings" : {
+    "_askToBuyEnabled" : false,
+    "_billingIssuesEnabled" : false,
+    "_timeRate" : 5
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "83F91CDC",
+      "localizations" : [
+
+      ],
+      "name" : "Sub GRP",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "displayPrice" : "555",
+          "familyShareable" : true,
+          "groupNumber" : 1,
+          "internalID" : "8D0A1493",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "TestEngLocalizations description",
+              "displayName" : "TestEngLocalizations",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.temporary.id",
+          "recurringSubscriptionPeriod" : "P1W",
+          "referenceName" : "Reference Name Test",
+          "subscriptionGroupID" : "83F91CDC",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 0
+  }
+}
