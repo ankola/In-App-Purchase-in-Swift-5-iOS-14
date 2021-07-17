@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IAP_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYy-2A-ZgC">
+                                <rect key="frame" x="144" y="94" width="126" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1WT-Lx-KM5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="  Fetch Plans   "/>
+                                <connections>
+                                    <action selector="btnFetchPlan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dO9-j1-8qH"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4J-fs-yqu">
+                                <rect key="frame" x="135" y="294" width="144" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="c7P-H9-PqP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="  Purchase Plan  "/>
+                                <connections>
+                                    <action selector="btnPurchasePlan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iXo-4F-uy2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnp-br-LGD">
+                                <rect key="frame" x="163.5" y="194" width="87" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Y1G-ui-QA9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="  Restore  "/>
+                                <connections>
+                                    <action selector="btnRestorePlan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4UK-TA-IYd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Q4J-fs-yqu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BnD-Cl-Mjo"/>
+                            <constraint firstItem="hnp-br-LGD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bFg-nq-rPz"/>
+                            <constraint firstItem="aYy-2A-ZgC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="nN1-5h-2XF"/>
+                            <constraint firstItem="aYy-2A-ZgC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o0U-cg-Ylr"/>
+                            <constraint firstItem="hnp-br-LGD" firstAttribute="top" secondItem="aYy-2A-ZgC" secondAttribute="bottom" constant="50" id="trF-aM-scB"/>
+                            <constraint firstItem="Q4J-fs-yqu" firstAttribute="top" secondItem="hnp-br-LGD" secondAttribute="bottom" constant="50" id="uWK-QK-lix"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnPlan1" destination="hnp-br-LGD" id="dfo-rr-CqO"/>
+                        <outlet property="btnPlan2" destination="Q4J-fs-yqu" id="tX6-jG-dwe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7" y="50"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

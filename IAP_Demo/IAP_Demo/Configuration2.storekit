@@ -1,0 +1,45 @@
+{
+  "products" : [
+
+  ],
+  "settings" : {
+    "_timeRate" : 6
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "9B3F847F",
+      "localizations" : [
+
+      ],
+      "name" : "subScription Grp",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "displayPrice" : "999",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "F0693CF8",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "AutoRenewableSubscriptionDescription",
+              "displayName" : "AutoReneSubscriptionPlan",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.temporary.id2",
+          "recurringSubscriptionPeriod" : "P1W",
+          "referenceName" : "Reference Name Test",
+          "subscriptionGroupID" : "9B3F847F",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 0
+  }
+}
